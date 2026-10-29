@@ -1,0 +1,18 @@
+{
+  "name": "enterprise-software-testing-assignment3",
+  "version": "1.0.0",
+  "description": "Automated system testing using TestCafe",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome tests/",
+    "test:search": "testcafe chrome tests/product-search.js",
+    "test:category": "testcafe chrome tests/category-navigation.js",
+    "test:details": "testcafe chrome tests/product-details.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "testcafe": "^3.7.6"
+  }
+}
