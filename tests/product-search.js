@@ -13,6 +13,8 @@ test('Search for MacBook', async t => {
     await t
         .typeText(searchInput, 'MacBook')
         .click(searchButton)
+        .expect(t.eval(() => window.location.href))
+        .contains('route=product/search')
         .expect(product.exists).ok()
         .takeScreenshot();
 });
