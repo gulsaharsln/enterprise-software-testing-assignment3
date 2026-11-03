@@ -41,7 +41,9 @@ test('Search with empty keyword', async t => {
 
     await t
         .click(searchButton)
-        .expect(Selector('h1').innerText)
-        .eql('Your Store')
+        .expect(t.eval(() => window.location.href))
+        .contains('route=product/search')
+        .expect(Selector('#content .product-thumb').count)
+        .eql(0)
         .takeScreenshot();
 });
