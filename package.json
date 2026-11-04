@@ -16,7 +16,10 @@
     "test:filtering": "testcafe chrome tests/product-filtering.js",
     "test:wishlist": "testcafe edge tests/wishlist.js --disable-native-automation",
     "test:account": "testcafe edge tests/accountUpdate.js --disable-native-automation",
-    "test:password": "testcafe edge tests/changePassword.js --disable-native-automation"
+    "test:password": "testcafe edge tests/changePassword.js --disable-native-automation",
+"test:registration": "testcafe chrome tests/taekyun-registration.js --disable-native-automation",
+"test:login": "testcafe chrome tests/taekyun-login.js --disable-native-automation",
+"test:logout": "testcafe chrome tests/taekyun-logout.js --disable-native-automation"
   },
   "keywords": [],
   "author": "",
