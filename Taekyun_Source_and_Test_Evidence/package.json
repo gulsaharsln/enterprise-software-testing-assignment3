@@ -1,0 +1,20 @@
+{
+  "name": "uts-opencart-f1-f3-playwright",
+  "version": "2.0.0",
+  "private": true,
+  "description": "UTS Assessment 3: T001 registration, T002 login, T003 logout — real assertions and evidence",
+  "scripts": {
+    "test": "playwright test --project=chrome-visible",
+    "test:headless": "playwright test --project=chrome-headless",
+    "test:registration": "playwright test tests/registration.spec.js --project=chrome-visible",
+    "test:login": "playwright test tests/login.spec.js --project=chrome-visible",
+    "test:logout": "playwright test tests/logout.spec.js --project=chrome-visible",
+    "check:site": "node check-site.mjs",
+    "report": "playwright show-report evidence/html-report",
+    "check:syntax": "node --check playwright.config.cjs && node --check check-site.mjs && node --check lib/opencart.js && node --check tests/registration.spec.js && node --check tests/login.spec.js && node --check tests/logout.spec.js",
+    "summary": "node summarise-results.cjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1"
+  }
+}
