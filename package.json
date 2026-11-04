@@ -13,7 +13,7 @@
     "test:checkout": "testcafe chrome tests/checkout.js",
     "test:comparison": "testcafe chrome tests/product-comparison.js",
     "test:sorting": "testcafe chrome tests/product-sorting.js",
-    "test:filtering": "testcafe chrome tests/product-filtering.js"
+    "test:filtering": "testcafe chrome tests/product-filtering.js",
     "test:wishlist": "testcafe edge tests/wishlist.js --disable-native-automation",
     "test:account": "testcafe edge tests/accountUpdate.js --disable-native-automation",
     "test:password": "testcafe edge tests/changePassword.js --disable-native-automation"
