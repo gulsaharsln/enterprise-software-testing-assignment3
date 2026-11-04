@@ -8,6 +8,9 @@
     "test:search": "testcafe chrome tests/product-search.js",
     "test:category": "testcafe chrome tests/category-navigation.js",
     "test:details": "testcafe chrome tests/product-details.js"
+    "test:add-to-cart": "testcafe chrome tests/add-to-cart.js",
+"test:cart-management": "testcafe chrome tests/shopping-cart-management.js",
+"test:checkout": "testcafe chrome tests/checkout.js",
   },
   "keywords": [],
   "author": "",
