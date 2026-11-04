@@ -1,0 +1,13 @@
+{
+  "name": "opencart-tests",
+  "version": "1.0.0",
+  "description": "TestCafe tests for the OpenCart demo site (Assignment 3)",
+  "scripts": {
+    "test:wishlist": "testcafe edge tests/wishlist.js --disable-native-automation",
+    "test:account": "testcafe edge tests/accountUpdate.js --disable-native-automation",
+    "test:password": "testcafe edge tests/changePassword.js --disable-native-automation"
+  },
+  "dependencies": {
+    "testcafe": "^3.7.0"
+  }
+}
